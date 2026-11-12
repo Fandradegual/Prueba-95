@@ -1,15 +1,7 @@
-export default function Header() {
+export default function Header({ marca }) {
   return (
-    <header
-      style={{
-        background: 'var(--color-primary)',
-        color: '#fff',
-        padding: 'calc(var(--spacing-unit) * 2)',
-        fontFamily: 'var(--font-heading)',
-        fontSize: '24px',
-      }}
-    >
-      Turismo Dalmata
+    <header className="header">
+      <div className="header__inner">{marca}</div>
     </header>
   )
 }

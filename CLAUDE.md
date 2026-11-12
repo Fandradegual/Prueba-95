@@ -39,4 +39,3 @@ Lee estos archivos antes de construir o modificar pantallas; si algo de aquí co
 - Componentes funcionales, un componente por archivo en `src/components/`
 - Sin librerías de estado externas — `useState`/`useReducer` es suficiente para este alcance
 - Mantén cada componente lo más simple posible; este es un prototipo, no producción
-- `src/App.jsx` parte con un aviso temporal ("Base lista para empezar a construir el prototipo."): al construir la primera pantalla, reemplázalo por completo; no lo conserves ni lo muevas a otra pantalla

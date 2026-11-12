@@ -1,34 +1,22 @@
-export default function BottomNav() {
-  const itemStyle = {
-    flex: 1,
-    minHeight: '48px',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    fontSize: '12px',
-    color: 'var(--color-text)',
-  }
-
+export default function BottomNav({ activa, onIr }) {
+  const items = [
+    { id: 'inicio', etiqueta: 'Inicio', icono: 'home' },
+    { id: 'reservas', etiqueta: 'Reservas', icono: 'calendar_month' },
+  ]
   return (
-    <nav
-      style={{
-        position: 'fixed',
-        bottom: 0,
-        left: 0,
-        right: 0,
-        display: 'flex',
-        background: '#fff',
-        boxShadow: '0 -2px 8px rgba(0,0,0,0.08)',
-      }}
-    >
-      <div style={itemStyle}>
-        <span className="material-symbols-outlined">home</span>
-        Inicio
-      </div>
-      <div style={itemStyle}>
-        <span className="material-symbols-outlined">calendar_month</span>
-        Reservas
+    <nav className="bottomnav" aria-label="Navegación principal">
+      <div className="bottomnav__inner">
+        {items.map((it) => (
+          <button
+            key={it.id}
+            type="button"
+            className={'bottomnav__item' + (activa === it.id ? ' is-active' : '')}
+            onClick={() => onIr(it.id)}
+          >
+            <span className="material-symbols-outlined">{it.icono}</span>
+            {it.etiqueta}
+          </button>
+        ))}
       </div>
     </nav>
   )

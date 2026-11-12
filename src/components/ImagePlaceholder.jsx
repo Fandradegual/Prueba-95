@@ -1,21 +1,10 @@
-export default function ImagePlaceholder({ height = 200 }) {
+export default function ImagePlaceholder({ height = 200, radius = true }) {
   return (
     <div
-      style={{
-        height,
-        background: 'var(--color-placeholder-bg)',
-        borderRadius: 'var(--radius-card)',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}
+      className="placeholder"
+      style={{ height, borderRadius: radius ? 'var(--radius-card)' : 0 }}
     >
-      <span
-        className="material-symbols-outlined"
-        style={{ color: 'var(--color-placeholder-icon)', fontSize: '48px' }}
-      >
-        image
-      </span>
+      <span className="material-symbols-outlined">image</span>
     </div>
   )
 }

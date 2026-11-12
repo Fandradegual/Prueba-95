@@ -1,1 +1,34 @@
-{}
+{
+  "rutas": [
+    {
+      "id": "cat-01",
+      "nombre": "Catamarán Lago — Tour panorámico",
+      "duracion": "2 horas",
+      "descripcion": "Navegación tranquila por el lago con vistas a la cordillera, bebida de bienvenida y guía a bordo.",
+      "precio": 25000,
+      "horarios": ["10:00", "13:00", "16:00"],
+      "cuposPorHorario": 20,
+      "fotos": 3
+    },
+    {
+      "id": "lan-01",
+      "nombre": "Lancha Isla — Paseo y almuerzo",
+      "duracion": "3 horas",
+      "descripcion": "Cruce en lancha hasta la isla, caminata corta por el sendero y almuerzo típico incluido.",
+      "precio": 38000,
+      "horarios": ["11:00", "15:00"],
+      "cuposPorHorario": 12,
+      "fotos": 2
+    },
+    {
+      "id": "cat-02",
+      "nombre": "Catamarán Atardecer — Navegación al ocaso",
+      "duracion": "1 hora 30 minutos",
+      "descripcion": "Salida corta al final del día para ver el atardecer desde el agua, con música suave y bebidas a la venta.",
+      "precio": 18000,
+      "horarios": ["18:00", "19:30"],
+      "cuposPorHorario": 16,
+      "fotos": 3
+    }
+  ]
+}
