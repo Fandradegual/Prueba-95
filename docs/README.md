@@ -32,3 +32,8 @@ Otros archivos clave:
 - `src/styles/tokens.css` y `src/styles/app.css`: colores, tipografía y estilos.
 
 Fuera de alcance (backlog): pago en línea, cuentas de usuario, panel de administración, varios operadores, notificaciones reales y persistencia entre sesiones.
+
+## Publicación en Vercel
+- `vercel.json` fija la configuración: framework Vite, `npm run build` y carpeta publicada `dist/`.
+- Cada cambio guardado en la rama `main` de GitHub se publica solo en Vercel.
+- `index.html` es solo la puerta de entrada: el código del prototipo vive en `src/` y Vercel lo compila al publicar.
