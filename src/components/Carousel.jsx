@@ -1,7 +1,8 @@
 import { useRef, useState } from 'react'
-import ImagePlaceholder from './ImagePlaceholder.jsx'
+import Foto from './Foto.jsx'
 
-export default function Carousel({ cantidad }) {
+export default function Carousel({ fotos }) {
+  const cantidad = fotos.length
   const pista = useRef(null)
   const [actual, setActual] = useState(0)
 
@@ -20,9 +21,9 @@ export default function Carousel({ cantidad }) {
   return (
     <div className="carousel">
       <div className="carousel__track" ref={pista} onScroll={alScroll}>
-        {Array.from({ length: cantidad }).map((_, i) => (
-          <div className="carousel__slide" key={i}>
-            <ImagePlaceholder height={220} />
+        {fotos.map((f) => (
+          <div className="carousel__slide" key={f.id}>
+            <Foto foto={f} height={220} ancho={1000} radius={false} />
           </div>
         ))}
       </div>

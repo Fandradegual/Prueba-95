@@ -1,4 +1,9 @@
 {
+  "portada": {
+    "id": "HT2jDxe6UF4",
+    "alt": "Lago de aguas azules rodeado de montañas en Torres del Paine",
+    "autor": "Karla Robinson"
+  },
   "rutas": [
     {
       "id": "cat-01",
@@ -8,7 +13,11 @@
       "precio": 25000,
       "horarios": ["10:00", "13:00", "16:00"],
       "cuposPorHorario": 20,
-      "fotos": 3
+      "fotos": [
+        { "id": "LExlOWiuwR0", "alt": "Bote en un lago tranquilo con montañas de fondo", "autor": "" },
+        { "id": "EhluUi8R1E0", "alt": "Catamarán de colores en la orilla de un lago", "autor": "Cat Guffin" },
+        { "id": "SHE3ALFxYYA", "alt": "Lago verde esmeralda entre montañas con un bote", "autor": "Michael Hamments" }
+      ]
     },
     {
       "id": "lan-01",
@@ -18,7 +27,10 @@
       "precio": 38000,
       "horarios": ["11:00", "15:00"],
       "cuposPorHorario": 12,
-      "fotos": 2
+      "fotos": [
+        { "id": "O9jbauQ6GGM", "alt": "Lancha cruzando un lago en calma con cerros verdes", "autor": "Clovis Wood" },
+        { "id": "S4XILWcz4Tc", "alt": "Pequeña isla en medio de un lago con montañas de fondo", "autor": "Alex Wolowiecki" }
+      ]
     },
     {
       "id": "cat-02",
@@ -28,7 +40,11 @@
       "precio": 18000,
       "horarios": ["18:00", "19:30"],
       "cuposPorHorario": 16,
-      "fotos": 3
+      "fotos": [
+        { "id": "C0Bv2CNfNfw", "alt": "Bote navegando sobre el agua al atardecer", "autor": "Jacob Diehl" },
+        { "id": "3Lewwn7yaCc", "alt": "Silueta de un bote sobre el lago al atardecer", "autor": "Patrick Schiele" },
+        { "id": "BkLjwZu-kWo", "alt": "Bote blanco y negro en el agua durante el atardecer", "autor": "Tapio Haaja" }
+      ]
     }
   ]
 }

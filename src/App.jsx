@@ -51,7 +51,7 @@ export default function App() {
     <>
       <Header marca={MARCA} />
       <main className="main">
-        {pantalla === 'inicio' && <Inicio rutas={mock.rutas} onElegir={elegirRuta} />}
+        {pantalla === 'inicio' && <Inicio rutas={mock.rutas} portada={mock.portada} onElegir={elegirRuta} />}
         {pantalla === 'detalle' && (
           <DetalleRuta
             ruta={ruta}

@@ -73,3 +73,13 @@ button { font-family: inherit; }
 .bottomnav__inner { max-width: var(--max-content-width); margin: 0 auto; display: flex; }
 .bottomnav__item { flex: 1; min-height: 64px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; background: none; border: 0; font-size: 12px; color: var(--color-text); cursor: pointer; }
 .bottomnav__item.is-active { color: var(--color-primary); font-weight: 600; }
+
+.foto { display: block; width: 100%; object-fit: cover; background: var(--color-placeholder-bg); }
+.carousel__track { border-radius: var(--radius-card); overflow-x: auto; }
+.hero { position: relative; border-radius: var(--radius-card); overflow: hidden; box-shadow: 0 2px 8px rgba(43,33,24,.18); }
+.hero__overlay { position: absolute; inset: auto 0 0 0; padding: 48px 16px 16px; background: linear-gradient(to top, rgba(0,0,0,.65), rgba(0,0,0,0)); color: #fff; display: flex; flex-direction: column; gap: 4px; }
+.hero__title { font-family: var(--font-heading); font-size: 24px; font-weight: 700; line-height: 1.2; }
+.hero__subtitle { font-size: 16px; opacity: .9; }
+.credits { font-size: 12px; opacity: .6; text-align: center; }
+.hero .placeholder { background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); }
+.hero .placeholder .material-symbols-outlined { display: none; }

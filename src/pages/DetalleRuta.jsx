@@ -10,7 +10,7 @@ export default function DetalleRuta({ ruta, onVolver, onReservar }) {
       </button>
       <h1 className="screen__title">{ruta.nombre}</h1>
       <p className="screen__subtitle">{ruta.descripcion}</p>
-      <Carousel cantidad={ruta.fotos} />
+      <Carousel fotos={ruta.fotos} />
       <div className="card card--static">
         <p className="meta">
           <span className="material-symbols-outlined">schedule</span>

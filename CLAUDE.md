@@ -33,7 +33,7 @@ Lee estos archivos antes de construir o modificar pantallas; si algo de aquí co
 ## Convenciones de UI
 - Los botones de acción principal ocupan el 100% del ancho de su contenedor
 - El título y la bajada de cada pantalla comparten el mismo padding horizontal
-- Placeholders de imagen: `--color-placeholder-bg` de fondo + ícono de imagen en `--color-placeholder-icon`, nunca una foto real ni un emoji
+- Imágenes: fotos reales con licencia libre (Unsplash) vía el componente `Foto`; si no cargan, respaldo con `--color-placeholder-bg` de fondo + ícono de imagen en `--color-placeholder-icon`. Nunca un emoji
 
 ## Convenciones de código
 - Componentes funcionales, un componente por archivo en `src/components/`

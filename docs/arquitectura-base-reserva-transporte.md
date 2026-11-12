@@ -36,13 +36,13 @@ Permitir a un turista reservar un cupo en un transporte turístico (catamarán, 
 
 ### 1. Inicio
 - **Objetivo:** mostrar las rutas/tours disponibles
-- **Contenido:** tarjetas con miniatura placeholder (mismo estilo que el placeholder de fotos: fondo gris + ícono de imagen), nombre de la ruta, horario, precio, cupos disponibles
+- **Contenido:** portada arriba (foto grande con degradado y título de bienvenida), luego tarjetas con foto de la ruta, nombre de la ruta, horario, precio, cupos disponibles. Crédito "Fotos: Unsplash" al final
 - **Acción:** seleccionar una ruta → va a Detalle de ruta
 
 ### 2. Detalle de ruta
 - **Objetivo:** dar toda la info necesaria para decidir reservar
-- **Contenido:** carrusel/slider con 2-3 fotos de ejemplo — arrastre/swipe nativo para touch **y también** flechas de avance/retroceso visibles para quien use mouse o trackpad, más indicador de puntos. No es "uno u otro": ambos deben funcionar a la vez, porque el mismo prototipo se usa en mobile y en desktop. Duración, descripción breve, precio por persona, cupos restantes
-- **Placeholder de fotos:** fondo gris claro + ícono de imagen centrado — nunca una imagen real, nunca un emoji a modo de foto
+- **Contenido:** carrusel/slider con 2-3 fotos reales de la ruta — arrastre/swipe nativo para touch **y también** flechas de avance/retroceso visibles para quien use mouse o trackpad, más indicador de puntos. No es "uno u otro": ambos deben funcionar a la vez, porque el mismo prototipo se usa en mobile y en desktop. Duración, descripción breve, precio por persona, cupos restantes
+- **Fotos:** fotos reales con licencia libre (Unsplash). Si una foto no carga, se muestra el placeholder de respaldo: fondo gris claro + ícono de imagen centrado — nunca un emoji a modo de foto
 - **Acción:** botón "Reservar" (ancho 100%) → va a Reservar
 
 ### 3. Reservar
@@ -76,7 +76,7 @@ Permitir a un turista reservar un cupo en un transporte turístico (catamarán, 
 - **Precios:** siempre en CLP, formato `$XX.XXX` sin decimales y sin desglose — aplica a todas las pantallas que muestran un precio (Inicio, Detalle, Reservar, Confirmación, Reservas)
 - **Botones de acción principal:** ancho 100% del contenedor, nunca ajustados al contenido
 - **Iconografía:** usar Material Symbols (vía Google Fonts, mismo mecanismo que la tipografía) para todo ícono de la interfaz. Sin emojis en ningún lugar — ni en la UI ni en los datos mock
-- **Placeholders de imagen:** fondo gris claro (`#E5E7EB`) + ícono de imagen (`#9CA3AF`) centrado
+- **Imágenes:** fotos reales con licencia libre (Unsplash), definidas en el mock. Respaldo si no cargan: fondo gris claro (`#E5E7EB`) + ícono de imagen (`#9CA3AF`) centrado
 - **Alineación:** el título y la bajada de cada pantalla comparten el mismo padding horizontal — revisar que no queden desalineados entre sí
 
 ## Datos mock sugeridos
@@ -91,7 +91,7 @@ Permitir a un turista reservar un cupo en un transporte turístico (catamarán, 
       "precio": 25000,
       "horarios": ["10:00", "13:00", "16:00"],
       "cuposPorHorario": 20,
-      "fotos": 3
+      "fotos": [{ "id": "LExlOWiuwR0", "alt": "Bote en un lago con montañas", "autor": "" }]
     }
   ]
 }

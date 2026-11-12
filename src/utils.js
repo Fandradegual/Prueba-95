@@ -33,3 +33,6 @@ export const generarCodigo = () => {
   for (let i = 0; i < 6; i++) s += letras[Math.floor(Math.random() * letras.length)]
   return 'DLM-' + s
 }
+
+export const urlFoto = (id, ancho = 800) =>
+  `https://unsplash.com/photos/${id}/download?w=${ancho}`
