@@ -6,6 +6,7 @@ Prototipo front-end construido en un taller en vivo. Prioriza velocidad y clarid
 ## Documentos del proyecto (fuente de verdad)
 Lee estos archivos antes de construir o modificar pantallas; si algo de aquí contradice un prompt, avisa en vez de improvisar:
 - docs/README.md
+- docs/arquitectura-base-reserva-transporte.md
 
 ## Alcance
 - Sin backend real: los datos viven en `src/data/mock.json`

@@ -8,4 +8,4 @@ Aquí guardamos las notas y guías de **Prueba-95**.
 - Este índice se actualiza cada vez que se agrega un documento.
 
 ## Índice
-- (aún no hay documentos)
+- [arquitectura-base-reserva-transporte.md](arquitectura-base-reserva-transporte.md): mapa de pantallas y alcance del MVP
