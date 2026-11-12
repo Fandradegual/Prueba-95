@@ -83,3 +83,22 @@ button { font-family: inherit; }
 .credits { font-size: 12px; opacity: .6; text-align: center; }
 .hero .placeholder { background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); }
 .hero .placeholder .material-symbols-outlined { display: none; }
+
+/* Affordance de tarjetas de ruta */
+.card--ruta { transition: transform .18s ease, box-shadow .18s ease; -webkit-tap-highlight-color: transparent; }
+.card__media { overflow: hidden; }
+.card__media .foto, .card__media .placeholder { transition: transform .3s ease; }
+.card__footer { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 8px; padding-top: 8px; border-top: 1px solid rgba(43,33,24,.08); }
+.card__cta { display: inline-flex; align-items: center; gap: 2px; min-height: 48px; padding: 0 8px 0 16px; border-radius: var(--radius-button); background: rgba(217,72,15,.1); color: var(--color-primary); font-size: 16px; font-weight: 600; white-space: nowrap; transition: background .18s ease; }
+.card__cta .material-symbols-outlined { transition: transform .18s ease; }
+@media (hover: hover) {
+  .card--ruta:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(43,33,24,.18); }
+  .card--ruta:hover .card__media .foto, .card--ruta:hover .card__media .placeholder { transform: scale(1.04); }
+  .card--ruta:hover .card__cta { background: rgba(217,72,15,.18); }
+  .card--ruta:hover .card__cta .material-symbols-outlined { transform: translateX(4px); }
+}
+.card--ruta:active { transform: scale(.98); box-shadow: 0 1px 4px rgba(43,33,24,.14); }
+@media (prefers-reduced-motion: reduce) {
+  .card--ruta, .card__media .foto, .card__media .placeholder, .card__cta, .card__cta .material-symbols-outlined { transition: none; }
+  .card--ruta:hover, .card--ruta:active, .card--ruta:hover .card__media .foto, .card--ruta:hover .card__media .placeholder { transform: none; }
+}
