@@ -1,0 +1,25 @@
+:root {
+  --color-primary: #D9480F;
+  --color-secondary: #FFD43B;
+  --color-background: #FFF8F1;
+  --color-text: #2B2118;
+
+  --color-placeholder-bg: #E5E7EB;
+  --color-placeholder-icon: #9CA3AF;
+
+  --font-heading: 'Fraunces', serif;
+  --font-body: 'Work Sans', sans-serif;
+
+  --radius-card: 12px;
+  --radius-button: 24px;
+  --spacing-unit: 8px;
+
+  --max-content-width: 1000px;
+}
+
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
